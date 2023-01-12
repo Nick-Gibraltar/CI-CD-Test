@@ -1,7 +1,7 @@
 name: learn-github-workflows
 on: [push]
 jobs:
-	does-something:
-	runs-on: ubuntu-latest
-	steps:
-		- run: aws s3 ls
+  does-something:
+    runs-on: ubuntu-latest
+    steps:
+      - run: aws s3 ls
