@@ -4,4 +4,5 @@ jobs:
   does-something:
     runs-on: ubuntu-latest
     steps:
+      - echo "hello"
       - run: aws s3 ls
