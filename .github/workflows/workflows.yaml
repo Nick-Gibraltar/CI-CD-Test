@@ -1,4 +1,4 @@
-me: learn-github-workflows
+name: learn-github-workflows
 on: [push]
 jobs:
   does-something:
