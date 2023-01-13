@@ -5,8 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: find the version
-      - id: find_version
-      - run: echo "aws --version=$(aws --version)\n" >> $GITHUB_OUTPUT
+        id: find_version
+        run: echo "aws --version=$(aws --version)\n" >> $GITHUB_OUTPUT
       - name: list the buckets
-      - id: list_buckets
-      - run: echo "aws s3 ls=$(aws s3 ls)\n" >> $GITHUB_OUTPUT
+        id: list_buckets
+        run: echo "aws s3 ls=$(aws s3 ls)\n" >> $GITHUB_OUTPUT
