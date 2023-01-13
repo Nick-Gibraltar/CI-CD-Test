@@ -4,5 +4,10 @@ jobs:
   does-something:
     runs-on: ubuntu-latest
     steps:
-      - run: aws --version
-      - run: aws s3 ls
+      - name: find the version
+      - id: find_version
+      - run: echo "aws --version=$(aws --version)\n" >> $GITHUB_OUTPUT
+      
+      - name: list the buckets
+      - id: list_buckets
+      - run: echo "aws s3 ls=$(aws s3 ls)\n" >> $GITHUB_OUTPUT
